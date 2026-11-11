@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "输入框模型额度",
+    "description": "在输入框下方的会话统计旁显示所选模型的剩余额度或余额。"
+  },
+  "quota.title": "剩余额度",
+  "quota.window": "剩余 {percent}%",
+  "quota.weekly": "每周 {percent}%",
+  "quota.windowLabel": "5 小时窗口",
+  "quota.weeklyLabel": "每周",
+  "quota.weeklySonnetLabel": "每周（Sonnet）",
+  "quota.resetIn": "重置",
+  "quota.weeklyResetIn": "每周重置",
+  "quota.extra": "额外用量",
+  "quota.balance": "余额",
+  "quota.bonus": "赠送额度"
+}

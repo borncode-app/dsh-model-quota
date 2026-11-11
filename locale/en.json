@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Model quota in the composer",
+    "description": "Shows the selected model's remaining rate limit or wallet balance beside the session statistics under the composer."
+  },
+  "quota.title": "Rate limit",
+  "quota.window": "{percent}% left",
+  "quota.weekly": "wk {percent}%",
+  "quota.windowLabel": "5-hour window",
+  "quota.weeklyLabel": "Weekly",
+  "quota.weeklySonnetLabel": "Weekly (Sonnet)",
+  "quota.resetIn": "Resets in",
+  "quota.weeklyResetIn": "Week resets in",
+  "quota.extra": "Extra usage",
+  "quota.balance": "Balance",
+  "quota.bonus": "Bonus credit"
+}

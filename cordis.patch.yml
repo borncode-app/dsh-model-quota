@@ -1,0 +1,37 @@
+# Inserts the quota Host row and serves /plugins/model-quota to the Web GUI.
+- insert:
+    - id: model-quota
+      name: '@local/dsh-model-quota'
+      config:
+        endpoint: /plugins/model-quota
+        cacheSeconds: 60
+        providers:
+          # MiniMax coding plan: window and weekly percentages remaining.
+          minimax-api:
+            kind: minimax-coding-plan
+            baseURL: https://api.minimax.io
+            apiKeyEnv: MINIMAX_API_KEY
+          # DeepSeek Platform account wallet balances.
+          deepseek-account:
+            kind: deepseek-account-balance
+            baseURL: https://platform.deepseek.com
+            credentialRecord: deepseek-account-platform/default
+          # DeepSeek API-key balance, for a DeepSeek API key route.
+          deepseek-official:
+            kind: deepseek-api-balance
+            baseURL: https://api.deepseek.com
+            apiKeyEnv: DEEPSEEK_API_KEY
+          # Claude Pro/Max subscription windows (5-hour, weekly, extra usage).
+          # Reads an OAuth token from whoever signed in; a setup token is
+          # inference-only, so the free usage endpoint refuses it and the probe
+          # falls back to the rate-limit headers of one one-token message.
+          anthropic:
+            kind: claude-oauth-usage
+            baseURL: https://api.anthropic.com
+            apiKeyEnv: ANTHROPIC_OAUTH_TOKEN
+            apiKeyEnvs:
+              - ANTHROPIC_API_KEY
+              - ANTHROPIC_AUTH_TOKEN
+            probeModel: claude-haiku-4-5
+            # Five minutes: every header probe spends one token on the plan.
+            cacheSeconds: 300

@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "โควตาโมเดลในช่องแชท",
+    "description": "แสดงโควตาคงเหลือหรือยอดเงินของโมเดลที่เลือก ไว้ข้างสถิติของ session ใต้ช่องแชท"
+  },
+  "quota.title": "โควตาคงเหลือ",
+  "quota.window": "เหลือ {percent}%",
+  "quota.weekly": "สัปดาห์ {percent}%",
+  "quota.windowLabel": "หน้าต่าง 5 ชั่วโมง",
+  "quota.weeklyLabel": "รายสัปดาห์",
+  "quota.weeklySonnetLabel": "รายสัปดาห์ (Sonnet)",
+  "quota.resetIn": "รีเซ็ตใน",
+  "quota.weeklyResetIn": "สัปดาห์รีเซ็ตใน",
+  "quota.extra": "การใช้งานเพิ่มเติม",
+  "quota.balance": "ยอดคงเหลือ",
+  "quota.bonus": "เครดิตโบนัส"
+}
