@@ -12,6 +12,15 @@
 
 ---
 
+## Where the MiniMax kit ships it
+
+This plugin is provider-agnostic — it stays installable on its own, and it
+supports DeepSeek and Claude providers too. It is also published inside
+**[`dsh-minimax-kit`](https://github.com/borncode-app/dsh-minimax-kit)**,
+because its `minimax-coding-plan` probe reads the same endpoint as the credit
+proxy. Install the kit if you want the whole MiniMax set from a single
+**Plugins** entry; the code here is unchanged.
+
 ## What it does
 
 Every provider hides its remaining quota somewhere different — a coding-plan window, an account wallet, a
